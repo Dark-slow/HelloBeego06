@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b8e57921-7507-43b1-9547-f0ee13b1c277" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloBeego06.exe" beforeDir="false" afterPath="$PROJECT_DIR$/HelloBeego06.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +30,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build main.go">
     <configuration name="go build HelloBeego06" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="HelloBeego06" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -37,8 +39,16 @@
       <package value="HelloBeego06" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="HelloBeego06" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build HelloBeego06" />
       </list>
     </recent_temporary>
@@ -51,22 +61,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="601" y="101" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1600758742692" />
-    <state width="1237" height="157" key="GridCell.Tab.0.bottom" timestamp="1600771867506">
+    <state width="1237" height="157" key="GridCell.Tab.0.bottom" timestamp="1600777332452">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="157" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600771867506" />
-    <state width="1237" height="157" key="GridCell.Tab.0.center" timestamp="1600771867506">
+    <state width="1237" height="157" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600777332452" />
+    <state width="1237" height="157" key="GridCell.Tab.0.center" timestamp="1600777332452">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="157" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1600771867506" />
-    <state width="1237" height="157" key="GridCell.Tab.0.left" timestamp="1600771867506">
+    <state width="1237" height="157" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1600777332452" />
+    <state width="1237" height="157" key="GridCell.Tab.0.left" timestamp="1600777332452">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="157" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1600771867506" />
-    <state width="1237" height="157" key="GridCell.Tab.0.right" timestamp="1600771867506">
+    <state width="1237" height="157" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1600777332452" />
+    <state width="1237" height="157" key="GridCell.Tab.0.right" timestamp="1600777332452">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="157" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1600771867506" />
+    <state width="1237" height="157" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1600777332452" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1600739553663">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
