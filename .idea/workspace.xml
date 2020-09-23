@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8e57921-7507-43b1-9547-f0ee13b1c277" name="Default Changelist" comment="" />
+    <list default="true" id="b8e57921-7507-43b1-9547-f0ee13b1c277" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
@@ -26,13 +44,22 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
+  <component name="RunManager" selected="Go Build.go build HelloBeego06">
     <configuration name="go build HelloBeego06" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="HelloBeego06" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/main.go" />
       <package value="HelloBeego06" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build default.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="HelloBeego06" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/controllers/default.go" />
+      <package value="HelloBeego06" />
+      <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -44,8 +71,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build HelloBeego06" />
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build default.go" />
       </list>
     </recent_temporary>
   </component>
@@ -57,25 +85,29 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="601" y="101" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1600758742692" />
-    <state width="1237" height="157" key="GridCell.Tab.0.bottom" timestamp="1600777332452">
+    <state x="616" y="0" key="#go_build_default.go" timestamp="1600862533844">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="157" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600777332452" />
-    <state width="1237" height="157" key="GridCell.Tab.0.center" timestamp="1600777332452">
+    <state x="616" y="0" key="#go_build_default.go/0.0.1280.680@0.0.1280.680" timestamp="1600862533844" />
+    <state width="796" height="157" key="GridCell.Tab.0.bottom" timestamp="1600863805335">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="157" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1600777332452" />
-    <state width="1237" height="157" key="GridCell.Tab.0.left" timestamp="1600777332452">
+    <state width="796" height="157" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1600863805335" />
+    <state width="796" height="157" key="GridCell.Tab.0.center" timestamp="1600863805335">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="157" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1600777332452" />
-    <state width="1237" height="157" key="GridCell.Tab.0.right" timestamp="1600777332452">
+    <state width="796" height="157" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1600863805335" />
+    <state width="796" height="157" key="GridCell.Tab.0.left" timestamp="1600863805335">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="157" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1600777332452" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1600739553663">
+    <state width="796" height="157" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1600863805335" />
+    <state width="796" height="157" key="GridCell.Tab.0.right" timestamp="1600863805335">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1600739553663" />
+    <state width="796" height="157" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1600863805335" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1600863580754">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1600863580754" />
   </component>
 </project>
