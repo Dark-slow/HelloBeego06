@@ -1,8 +1,11 @@
 package controllers
 
 import (
+	"HelloBeego06/models"
+	"encoding/json"
 	"fmt"
 	"github.com/astaxie/beego"
+	"io/ioutil"
 )
 
 type MainController struct {
@@ -10,6 +13,8 @@ type MainController struct {
 }
 
 func (c *MainController) Get() {
+	//name1 :=c.GetString("name")
+	//age1,err :=c.GetInt("age")
 	//获取get类型请求的请求参数
 	name :=c.Ctx.Input.Query("name")
 	age :=c.Ctx.Input.Query("age")
@@ -26,7 +31,7 @@ func (c *MainController) Get() {
 /*
 该post方法是处理post类型的请求的时候，要调用的方法
  */
-func(c *MainController) Post(){
+/*func(c *MainController) Post(){
 	fmt.Println("post类型的请求")
 	user :=c.Ctx.Request.FormValue("user")
 	fmt.Println("用户名为：",user)
@@ -45,4 +50,21 @@ func(c *MainController) Post(){
 
 	//request:请求  response响应
 
+}*/
+func (c *MainController) Post(){
+	dataByes,err := ioutil.ReadAll(c.Ctx.Request.Body)
+	if err != nil {
+		c.Ctx.WriteString("数据接收失败")
+		return
+	}
+	//JSON包解析
+	var person models.Person
+	err = json.Unmarshal(dataByes,&person)
+	if err != nil{
+		c.Ctx.WriteString("数据解析失败,请重试")
+		return
+	}
+	fmt.Println("用户名是:",person.User,",年龄",person.Age)
+	c.Ctx.WriteString("用户名:"+person.User)
+	c.Ctx.WriteString("性别是:"+person.Sex)
 }
