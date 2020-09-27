@@ -69,32 +69,19 @@ func (c *MainController) Get() {
 	c.Ctx.WriteString("性别是:"+person.Sex)
 }*/
 func (c *MainController) Post() {
-	name := c.Ctx.Request.FormValue("name")
-	birthday := c.Ctx.Request.FormValue("birthday")
-	address := c.Ctx.Request.FormValue("address")
-	nick := c.Ctx.Request.FormValue("nick")
-	fmt.Println(name, birthday, address, nick)
-	//用得到的数据进行对比
-	if name != "wujiali" && address != "dongyang" {
-		c.Ctx.WriteString("数据接收错误，重试啊！")
+	body :=c.Ctx.Request.Body
+	dataBase ,err :=ioutil.ReadAll(body)
+	if err != nil {
+		c.Ctx.WriteString("数据接收失败，请重新尝试")
 		return
 	}
-	c.Ctx.WriteString("数据接收成功，恭喜!!")
 
 	var person models.Person
-	data, err := ioutil.ReadAll(c.Ctx.Request.Body)
+	err =json.Unmarshal(dataBase,&person)
 	if err != nil {
-		c.Ctx.WriteString("数据接收错误,请重试尝试")
+		c.Ctx.WriteString("数据解析失败，请重新尝试")
 		return
 	}
-	err = json.Unmarshal(data, &person)
-	if err != nil {
-		c.Ctx.WriteString("数据解析错误")
-		return
-	}
-	fmt.Println("姓名:", person.Name)
-	fmt.Println("生日:", person.Birthday)
-	fmt.Println("地址:", person.Address)
-	fmt.Println("昵称", person.Nick)
-	c.Ctx.WriteString("数据请求成功")
+	fmt.Println("名字:",person.Name,",地址",person.Address)
+	c.Ctx.WriteString("数据接收成功")
 }

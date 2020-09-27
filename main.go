@@ -26,7 +26,7 @@ func main() {
 	dbPassword := config.String("db_password")
 	dbIP := config.String("db_ip")
 	dbName := config.String("db_Name")
-	db, err :=sql.Open(driver,dbUser+":"+dbPassword+"@tcp("+dbIP+")/"+dbName+"")
+	db, err :=sql.Open(driver,dbUser+":"+dbPassword+"@tcp("+dbIP+")/"+dbName+""+dbName+"?charset-8")
 	if err != nil {
 		panic("数据库连接打开失败，请重新尝试")
 	}
